@@ -6,8 +6,15 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <tb:TaskbarIcon x:Key="Taskbar"
+                        MenuActivation="All"
                         ToolTipText=""
                         IconSource="icon.ico">
+            <tb:TaskbarIcon.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Unlock" Click="Unlock_Click"/>
+                    <MenuItem Header="Lock" Click="Lock_Click"/>
+                </ContextMenu>
+            </tb:TaskbarIcon.ContextMenu>
         </tb:TaskbarIcon>
     </Application.Resources>
 </Application>

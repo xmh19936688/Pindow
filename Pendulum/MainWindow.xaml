@@ -12,7 +12,7 @@
         <!--设置透明边框的宽度，-1表示全部-->
         <WindowChrome GlassFrameThickness="-1"/>
     </WindowChrome.WindowChrome>
-        <Window.Template>
+    <Window.Template>
         <ControlTemplate TargetType="Window">
             <!--设置透明边框-->
             <Border Background="Transparent">

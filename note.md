@@ -37,6 +37,10 @@ Win32.cs
 
 ## 给系统托盘添加菜单
 
+在`App.xaml`的`<tb:TaskbarIcon>`中添加`<tb:TaskbarIcon.ContextMenu>`，
+在`<tb:TaskbarIcon.ContextMenu>`中的`<ContextMenu>`中添加`<MenuItem>`，
+`<MenuItem>`的`Lock_Click`对应到`App.xaml.cs`中的同名方法，方法签名为`private void Click(object sender, RoutedEventArgs e)`。
+
 ## 允许通过菜单切换穿透和透明
 
 ## 允许在非透明状态下改变位置和字体大小
