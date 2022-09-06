@@ -55,6 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BrushCreator.cs" />
+    <Compile Include="PerformanceDesktopTransparentWindow.cs" />
+    <Compile Include="Win32.cs" />
+    <Compile Include="Win32.Dwmapi.cs" />
+    <Compile Include="Win32.WM.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
