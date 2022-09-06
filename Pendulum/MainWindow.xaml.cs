@@ -27,6 +27,9 @@ namespace Pendulum
         {
             InitializeComponent();
 
+            //设置样式
+            WindowStyle = WindowStyle.None;
+            ResizeMode = ResizeMode.NoResize;
             // 设置透明且点击穿透
             SetTransparentHitThrough();
             // 设置窗口总在最前

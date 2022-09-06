@@ -6,7 +6,7 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <tb:TaskbarIcon x:Key="Taskbar"
-                        MenuActivation="All"
+                        MenuActivation="RightClick"
                         ToolTipText=""
                         IconSource="icon.ico">
             <tb:TaskbarIcon.ContextMenu>
