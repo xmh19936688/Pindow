@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pendulum", "Pendulum\Pendulum.csproj", "{BB77F2AD-ED42-477D-BB08-A023FB1BC468}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB77F2AD-ED42-477D-BB08-A023FB1BC468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB77F2AD-ED42-477D-BB08-A023FB1BC468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB77F2AD-ED42-477D-BB08-A023FB1BC468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB77F2AD-ED42-477D-BB08-A023FB1BC468}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E8D7D23-B0DF-4646-86BD-BAD4055A783F}
+	EndGlobalSection
+EndGlobal
