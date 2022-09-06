@@ -25,7 +25,20 @@ namespace Pendulum
         public MainWindow()
         {
             InitializeComponent();
+
+            // 设置透明且点击穿透
             SetTransparentHitThrough();
+            // 设置窗口总在最前
+            Topmost = true;
+            // 设置回调保证窗口最前
+            Deactivated += Window_Deactivated;
+        }
+
+        // 窗口不活跃回调
+        private void Window_Deactivated(object sender, EventArgs e)
+        {
+            // 设置窗口总在最前
+            ((Window)sender).Topmost=true;
         }
     }
 }

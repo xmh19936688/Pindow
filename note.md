@@ -19,6 +19,11 @@ Win32.cs
 
 ## 使窗口总在最前
 
+在`MainWindow()`中设置`Topmost = true;`;
+在`MainWindow()`给`Deactivated`添加回调，在回调中设置`((Window)sender).Topmost=true;`
+
+## 每300ms更新label
+
 ## 创建系统托盘图标
 
 ## 给系统托盘添加菜单
@@ -32,3 +37,4 @@ Win32.cs
 - [WPF 制作高性能的透明背景异形窗口](https://blog.walterlv.com/post/wpf-transparent-window-without-allows-transparency.html)
 - [WPF 制作支持点击穿透的高性能的透明背景异形窗口](https://lindexi.blog.csdn.net/article/details/112240402)
 - [透明窗口且点击穿透代码依赖](https://github.com/lindexi/lindexi_gd/tree/b26274ae2ba4b54c151b69db4e899781fb640597/RuhuyagayBemkaijearfear)
+- [窗口总在最前](https://www.itranslater.com/qa/details/2583224223888049152)
