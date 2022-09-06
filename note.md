@@ -22,7 +22,11 @@ Win32.cs
 在`MainWindow()`中设置`Topmost = true;`;
 在`MainWindow()`给`Deactivated`添加回调，在回调中设置`((Window)sender).Topmost=true;`
 
-## 每300ms更新label
+## 定时更新label
+
+`DispatcherTimer timer = new DispatcherTimer()`创建定时器；
+`timer.Interval = new TimeSpan(0, 0, 0, 0, 200)`设置时间间隔，其中`TimeSpan`有多种重载；
+`timertimer.Tick += Tick`给定时器设置回调，函数签名为`private void Tick(object sender, EventArgs e){}`；
 
 ## 创建系统托盘图标
 
@@ -30,7 +34,9 @@ Win32.cs
 
 ## 允许通过菜单切换穿透和透明
 
-## 允许在非透明状态下改变位置和大小
+## 允许在非透明状态下改变位置和字体大小
+
+## 窗口大小自适应字体大小
 
 ## 参考引用
 
@@ -38,3 +44,4 @@ Win32.cs
 - [WPF 制作支持点击穿透的高性能的透明背景异形窗口](https://lindexi.blog.csdn.net/article/details/112240402)
 - [透明窗口且点击穿透代码依赖](https://github.com/lindexi/lindexi_gd/tree/b26274ae2ba4b54c151b69db4e899781fb640597/RuhuyagayBemkaijearfear)
 - [窗口总在最前](https://www.itranslater.com/qa/details/2583224223888049152)
+- [使用定时器操作UI界面](https://www.cnblogs.com/jianjipan/p/10479218.html)
