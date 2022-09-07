@@ -44,6 +44,9 @@ namespace Pendulum
             timer.Interval = new TimeSpan(0, 0, 0, 0, 200); // 参数依次为：日 时 分 秒 毫秒
             timer.Tick += Tick;
             timer.Start();
+
+            // 设置滑块滑动回调
+            slider.ValueChanged += SliderValueChanged;
         }
 
         // 窗口不活跃回调
@@ -57,6 +60,15 @@ namespace Pendulum
         private void Tick(object sender, EventArgs e)
         {
             label.Content = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        // 滑块滑动回调
+        private void SliderValueChanged(object sender, EventArgs e)
+        {
+            // 字体不能为0
+            if (slider.Value == 0) return;
+            // 根据滑块值设置字体
+            label.FontSize = slider.Value*512;
         }
 
         // 设置鼠标按下的时候拖拽移动窗口

@@ -49,7 +49,13 @@ Win32.cs
 
 在`MainWindow`中重写`OnMouseLeftButtonDown()`方法，在其中调用`DragMove()`。
 
-## 窗口大小自适应字体大小
+## 通过滑块调整字体大小
+
+`Slider`为滑块控件；
+`Minimum`为最小值；
+`Maximum`为最大值；
+`Value`为当前值；
+`ValueChanged`为滑动回调。
 
 ## 生成带icon的exe
 
