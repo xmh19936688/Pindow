@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pendulum"
         mc:Ignorable="d"
-        Title="Pendulum" Height="450" Width="800">
+        Title="Pendulum" Height="160" Width="320">
     <WindowChrome.WindowChrome>
         <!--设置透明边框的宽度，-1表示全部-->
         <WindowChrome GlassFrameThickness="-1"/>
