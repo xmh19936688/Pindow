@@ -27,6 +27,15 @@ namespace Pendulum
         {
             InitializeComponent();
 
+            // 读取位置大小并设置
+            Rect restoreBounds = Properties.Settings.Default.MainRestoreBounds;
+            Left = restoreBounds.Left;
+            Top = restoreBounds.Top;
+            Width = restoreBounds.Width;
+            Height = restoreBounds.Height;
+            // 读取窗口状态并设置
+            WindowState = Properties.Settings.Default.MainWindowState;
+
             //设置样式
             WindowStyle = WindowStyle.None;
             ResizeMode = ResizeMode.NoResize;
@@ -107,6 +116,15 @@ namespace Pendulum
         {
             base.OnMouseLeftButtonDown(e);
             DragMove();
+        }
+
+        // 窗口关闭时的回调
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            // 保存窗口状态
+            Properties.Settings.Default.MainRestoreBounds = RestoreBounds;
+            Properties.Settings.Default.MainWindowState = WindowState;
+            Properties.Settings.Default.Save();
         }
     }
 }

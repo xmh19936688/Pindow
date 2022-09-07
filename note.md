@@ -64,6 +64,11 @@ Win32.cs
 
 ## 记录上次关闭时的窗口配置
 
+在`Settings.settings`中添加`MainRestoreBounds`变量，类型为`System.Windows.Rect`，值为“左上宽高”，
+在`Settings.settings`中添加`MainWindowState`变量，类型为`System.Windows.WindowState`，
+在`MainWindow.xaml`中注册`Closing`回调，在`MainWindow.xaml.cs`中实现`Closing`回调，
+在`Closing`回调中，保存状态，在`MainWindow()`方法中读取状态并初始化配置。
+
 ## 生成带icon的exe
 
 ## 参考引用
@@ -80,3 +85,4 @@ Win32.cs
 - [拖拽移动窗口位置](https://docs.microsoft.com/en-us/dotnet/api/system.windows.window.dragmove?view=windowsdesktop-6.0#examples)
 - [在App.cs中获取当前Window](https://zditect.com/article/505553.html)
 - [在所有虚拟桌面显示窗口](https://winaero.com/how-to-make-a-window-visible-on-all-virtual-desktops-in-windows-10/)
+- [WPF窗口保持上次关闭时的大小与位置](https://blog.csdn.net/qq_43307934/article/details/87971342)
