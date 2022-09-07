@@ -58,6 +58,12 @@ namespace Pendulum
         {
             label.Content = DateTime.Now.ToString("HH:mm:ss");
         }
-    }
 
+        // 设置鼠标按下的时候拖拽移动窗口
+        protected override void OnMouseLeftButtonDown(MouseButtonEventArgs e)
+        {
+            base.OnMouseLeftButtonDown(e);
+            DragMove();
+        }
+    }
 }

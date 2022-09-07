@@ -47,6 +47,8 @@ Win32.cs
 
 ## 允许在非透明状态下改变位置和字体大小
 
+在`MainWindow`中重写`OnMouseLeftButtonDown()`方法，在其中调用`DragMove()`。
+
 ## 窗口大小自适应字体大小
 
 ## 生成带icon的exe
@@ -62,3 +64,4 @@ Win32.cs
 - [使用NotifyIcon](https://www.codeproject.com/Articles/36468/WPF-NotifyIcon-2)
 - [图标库](https://www.iconfont.cn/)
 - [svg转ico](https://www.aconvert.com/cn/icon/svg-to-ico/)
+- [拖拽移动窗口位置](https://docs.microsoft.com/en-us/dotnet/api/system.windows.window.dragmove?view=windowsdesktop-6.0#examples)
