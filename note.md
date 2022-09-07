@@ -57,6 +57,13 @@ Win32.cs
 `Value`为当前值；
 `ValueChanged`为滑动回调。
 
+## 系统托盘图标双击命令
+
+创建`TaskBarCommand`类并实现`ICommand`接口，
+注册到`TaskbarIcon`的`DoubleClickCommand`上。
+
+## 记录上次关闭时的窗口配置
+
 ## 生成带icon的exe
 
 ## 参考引用

@@ -68,7 +68,38 @@ namespace Pendulum
             // 字体不能为0
             if (slider.Value == 0) return;
             // 根据滑块值设置字体
-            label.FontSize = slider.Value*512;
+            label.FontSize = slider.Value * 512;
+        }
+
+        // 切换穿透
+        public void ToggleThrough()
+        {
+            if (ResizeMode == ResizeMode.CanResize)
+                SetThrough();
+            else
+                SetNotThrough();
+        }
+
+        // 设置允许穿透
+        public void SetThrough()
+        {
+            if (ResizeMode == ResizeMode.NoResize) return;
+
+            SetTransparentHitThrough();
+            ResizeMode = ResizeMode.NoResize;
+            slider.Visibility = Visibility.Hidden;
+            WindowStyle = WindowStyle.None;
+        }
+
+        // 设置不穿透
+        public void SetNotThrough()
+        {
+            if (ResizeMode == ResizeMode.CanResize) return;
+
+            SetTransparentNotHitThrough();
+            ResizeMode = ResizeMode.CanResize;
+            slider.Visibility = Visibility.Visible;
+            WindowStyle = WindowStyle.SingleBorderWindow;
         }
 
         // 设置鼠标按下的时候拖拽移动窗口
