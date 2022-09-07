@@ -79,3 +79,4 @@ Win32.cs
 - [svg转ico](https://www.aconvert.com/cn/icon/svg-to-ico/)
 - [拖拽移动窗口位置](https://docs.microsoft.com/en-us/dotnet/api/system.windows.window.dragmove?view=windowsdesktop-6.0#examples)
 - [在App.cs中获取当前Window](https://zditect.com/article/505553.html)
+- [在所有虚拟桌面显示窗口](https://winaero.com/how-to-make-a-window-visible-on-all-virtual-desktops-in-windows-10/)
