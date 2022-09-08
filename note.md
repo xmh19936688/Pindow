@@ -78,7 +78,10 @@ Win32.cs
 - 选择Debug或Release运行（调试或执行）一次
 - 在项目的bin下的Debug或Release下生成的exe文件即可复制到其他地方运行
 
-## 生成带icon的exe
+## 给exe指定icon
+
+- 在解决方案管理器视图中的项目上右键，属性
+- 在应用程序标签下设置图标
 
 ## 参考引用
 
@@ -97,3 +100,4 @@ Win32.cs
 - [WPF窗口保持上次关闭时的大小与位置](https://blog.csdn.net/qq_43307934/article/details/87971342)
 - [WPF程序只生成一个Exe文件](https://www.cnblogs.com/luziking/p/15032206.html)
 - [使用Costura.Fody插件将自己写的程序打包成一个可以独立运行的EXE文件](https://blog.csdn.net/wangjiaoshoudebaba/article/details/80787677)
+- [设置icon](https://stackoverflow.com/questions/5531074/how-to-define-single-icon-for-main-window-and-exe-file)
