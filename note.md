@@ -69,6 +69,15 @@ Win32.cs
 在`MainWindow.xaml`中注册`Closing`回调，在`MainWindow.xaml.cs`中实现`Closing`回调，
 在`Closing`回调中，保存状态，在`MainWindow()`方法中读取状态并初始化配置。
 
+## 生成单个exe
+
+- 在解决方案管理器视图中的项目上右键
+- 点击管理NuGet程序包
+- 在浏览中搜索`Costura.Fody`并安装
+- 清理并重新生成解决方案
+- 选择Debug或Release运行（调试或执行）一次
+- 在项目的bin下的Debug或Release下生成的exe文件即可复制到其他地方运行
+
 ## 生成带icon的exe
 
 ## 参考引用
@@ -86,3 +95,5 @@ Win32.cs
 - [在App.cs中获取当前Window](https://zditect.com/article/505553.html)
 - [在所有虚拟桌面显示窗口](https://winaero.com/how-to-make-a-window-visible-on-all-virtual-desktops-in-windows-10/)
 - [WPF窗口保持上次关闭时的大小与位置](https://blog.csdn.net/qq_43307934/article/details/87971342)
+- [WPF程序只生成一个Exe文件](https://www.cnblogs.com/luziking/p/15032206.html)
+- [使用Costura.Fody插件将自己写的程序打包成一个可以独立运行的EXE文件](https://blog.csdn.net/wangjiaoshoudebaba/article/details/80787677)
