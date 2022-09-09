@@ -45,7 +45,7 @@ Win32.cs
 
 在菜单回调方法中进行配置
 
-## 允许在非透明状态下改变位置和字体大小
+## 允许在非透明状态下改变位置
 
 在`MainWindow`中重写`OnMouseLeftButtonDown()`方法，在其中调用`DragMove()`。
 
