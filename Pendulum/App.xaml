@@ -13,6 +13,7 @@
                 <ContextMenu>
                     <MenuItem Header="Unlock" Click="Unlock_Click"/>
                     <MenuItem Header="Lock" Click="Lock_Click"/>
+                    <MenuItem Header="Exit" Click="Exit_Click"/>
                 </ContextMenu>
             </tb:TaskbarIcon.ContextMenu>
         </tb:TaskbarIcon>

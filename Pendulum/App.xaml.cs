@@ -41,6 +41,12 @@ namespace Pendulum
             MainWindow main = Current.MainWindow as MainWindow;
             main.SetThrough();
         }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = Current.MainWindow as MainWindow;
+            main.Close();
+        }
     }
 
     // taskbar的命令实现
