@@ -35,6 +35,8 @@ namespace Pendulum
             Height = restoreBounds.Height;
             // 读取窗口状态并设置
             WindowState = Properties.Settings.Default.MainWindowState;
+            // 读取字体大小并设置
+            label.FontSize = Properties.Settings.Default.FontSize;
 
             //设置样式
             WindowStyle = WindowStyle.None;
@@ -124,6 +126,7 @@ namespace Pendulum
             // 保存窗口状态
             Properties.Settings.Default.MainRestoreBounds = RestoreBounds;
             Properties.Settings.Default.MainWindowState = WindowState;
+            Properties.Settings.Default.FontSize = label.FontSize;
             Properties.Settings.Default.Save();
         }
     }
