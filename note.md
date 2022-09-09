@@ -101,3 +101,4 @@ Win32.cs
 - [WPF程序只生成一个Exe文件](https://www.cnblogs.com/luziking/p/15032206.html)
 - [使用Costura.Fody插件将自己写的程序打包成一个可以独立运行的EXE文件](https://blog.csdn.net/wangjiaoshoudebaba/article/details/80787677)
 - [设置icon](https://stackoverflow.com/questions/5531074/how-to-define-single-icon-for-main-window-and-exe-file)
+- [在所有虚拟桌面显示，且不在alt+tab和win+tab显示](https://stackoverflow.com/questions/357076/best-way-to-hide-a-window-from-the-alt-tab-program-switcher/551847)
