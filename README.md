@@ -39,4 +39,5 @@ Pindow是一直pin在屏幕上的window。
 
 ## Limitation
 
-- 不支持Win7
+- 不支持在Win7运行
+- 不支持在VisualStudio2017编译
