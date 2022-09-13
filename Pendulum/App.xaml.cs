@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Hardcodet.Wpf.TaskbarNotification;
+using System;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using Hardcodet.Wpf.TaskbarNotification;
 
 namespace Pendulum
 {
