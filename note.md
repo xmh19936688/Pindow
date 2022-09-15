@@ -22,6 +22,11 @@ Win32.cs
 在`MainWindow()`中设置`Topmost = true;`，
 在`MainWindow()`给`Deactivated`添加回调，在回调中设置`((Window)sender).Topmost=true;`。
 
+## 启动后失焦(不活跃)
+
+- 在xaml文件中，给window设置`ShowActivatedShowActivated="False"`;
+- 在cs文件中，在构造函数中设置`ShowActivated = false;`
+
 ## 定时更新label
 
 `DispatcherTimer timer = new DispatcherTimer()`创建定时器，
@@ -102,3 +107,4 @@ Win32.cs
 - [使用Costura.Fody插件将自己写的程序打包成一个可以独立运行的EXE文件](https://blog.csdn.net/wangjiaoshoudebaba/article/details/80787677)
 - [设置icon](https://stackoverflow.com/questions/5531074/how-to-define-single-icon-for-main-window-and-exe-file)
 - [在所有虚拟桌面显示，且不在alt+tab和win+tab显示](https://stackoverflow.com/questions/357076/best-way-to-hide-a-window-from-the-alt-tab-program-switcher/551847)
+- [WPF窗口打开时不获取焦点(不活跃)](https://blog.csdn.net/z736248591/article/details/109494882)

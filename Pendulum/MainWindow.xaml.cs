@@ -16,6 +16,8 @@ namespace Pendulum
         {
             InitializeComponent();
 
+            // 设置窗口启动时失焦(不活跃)
+            ShowActivated = false;
             // 读取位置大小并设置
             Rect restoreBounds = Properties.Settings.Default.MainRestoreBounds;
             Left = restoreBounds.Left;
