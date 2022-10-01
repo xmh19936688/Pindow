@@ -3,6 +3,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
+using System.Windows.Media;
 using System.Windows.Threading;
 
 namespace Pendulum
@@ -12,6 +13,24 @@ namespace Pendulum
     /// </summary>
     public partial class MainWindow : PerformanceDesktopTransparentWindow
     {
+        public string[] colors = {
+            "#7fffc107",
+            "#7f3f51b5",
+            "#7ff44336",
+            "#7f009688",
+            "#7fcddc39",
+            "#7f9c27b0",
+            "#7fff9800",
+            "#7f2196f3",
+            "#7fe91e63",
+            "#7f4caf50",
+            "#7fffeb3b",
+            "#7f673ab7",
+            "#7f00bcd4",
+            "#7fff5722",
+            "#7f8bc34a",
+        };
+
         public MainWindow()
         {
             InitializeComponent();
@@ -44,7 +63,7 @@ namespace Pendulum
             // 设置定时器，定时更新UI
             DispatcherTimer timer = new DispatcherTimer();
             timer.Interval = new TimeSpan(0, 0, 0, 0, 200); // 参数依次为：日 时 分 秒 毫秒
-            timer.Tick += Tick;
+            timer.Tick += OnTick;
             timer.Start();
 
             // 设置滑块滑动回调
@@ -59,9 +78,12 @@ namespace Pendulum
         }
 
         // 定时器回调
-        private void Tick(object sender, EventArgs e)
+        private void OnTick(object sender, EventArgs e)
         {
-            label.Content = DateTime.Now.ToString("HH:mm:ss");
+            DateTime now = DateTime.Now;
+            label.Content = now.ToString("HH:mm:ss");
+            string color = colors[now.Second % colors.Length];
+            label.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString(color));
         }
 
         // 滑块滑动回调
