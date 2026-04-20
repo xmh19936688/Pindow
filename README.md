@@ -1,5 +1,7 @@
 # Pindow
 
+For macOS see: https://github.com/xmh19936688/manchor
+
 Pindow means pin-window.
 Pindow是一直pin在屏幕上的window。
 
